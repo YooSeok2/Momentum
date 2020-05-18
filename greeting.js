@@ -24,7 +24,7 @@ askUserName=()=>{
 userGreeting =(text)=>{
     form.classList.remove(SHOWING)
     greeting.classList.add(SHOWING)
-    greeting.innerHTML = `Hello ${text}!!`
+    greeting.innerHTML = `Hello ${text}`
 }
 
 getLocalStorage = ()=>{

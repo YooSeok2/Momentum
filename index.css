@@ -1,8 +1,10 @@
 
 h1{
     color : white;
+    font-size: 3rem;
     transition: color 0.5s ease-in-out;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    margin-bottom: 0;
 }
 
 .btn{
@@ -11,15 +13,18 @@ h1{
 
 .form, js_greeting{
     display: none;
+    margin-top: 0;
 }
 
 .clock_h1{
-    font-size: 5rem;
+    font-size: 10rem;
 }
 
 .clicked{
     color: brown
 }
+
+
 
 .showing{
     display: block;
@@ -33,6 +38,25 @@ h1{
     font-size: 0.8rem;
 }
 
+input{
+    margin-top: 3vh;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 30px;
+   
+}
+
+input:focus, input:active{
+    outline: none;
+}
+
+input::placeholder{
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
 
 @keyframes fadeIn{
     from{
@@ -40,6 +64,25 @@ h1{
     }to{
         opacity: 1;
     }
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    margin-top: 2vh;
+    padding: 0;
+    margin-right: 7vw;
+}
+
+li{
+    list-style-type: none;
+    font-size: 22px;
+    margin-top: 2vh;
+    color: white;
+    font-weight: bold;
+}
+
+li button{
+    margin-right: 2vw;
 }
 
 .bgImage{
@@ -54,8 +97,8 @@ h1{
 }
 
 .content{
-    position: absolute;
-    top: 50%;
-    left: 49%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
 }
