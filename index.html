@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel='stylesheet' href="index.css">
+        <title>WEB1 - Welcome</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="content">
+            <!-- clock -->
+            <div class="clock">
+                <h1 class="clock_h1"></h1>
+            </div>
+            <!-- ask your name -->
+            <form class="js_form form">
+                <input type="text" placeholder="What's your Name?">
+            </form>
+            <!-- greeting massage -->
+            <h1 class="js_greeting form"></h1>
+
+            <!-- write todoList -->
+            <form class="js_todoForm">
+                <input type="text" placeholder="write a to do">
+            </form>
+            <ul class="js_todoList"></ul>
+            
+        </div>
+        <span class="js_weather"></span>
+       
+
+        <script type="text/javascript" src="clock.js"></script>
+        <script type="text/javascript" src="greeting.js"></script>
+        <script type="text/javascript" src="todo.js"></script>
+        <script type="text/javascript" src="bg.js"></script>
+        <script type="text/javascript" src="weather.js"></script>
+    </body>
+    <script type="text/javascript">
+        const content = document.querySelector('.content')
+
+        const width = content.clientWidth
+        const height = content.clientHeight
+
+        content.style.marginLeft = `-${Math.floor(width/2)}px`
+        content.style.marginTop = `-${Math.floor(height/2)}px`
+    </script>
+</html>

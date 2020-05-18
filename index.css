@@ -1,0 +1,61 @@
+
+h1{
+    color : white;
+    transition: color 0.5s ease-in-out;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.form, js_greeting{
+    display: none;
+}
+
+.clock_h1{
+    font-size: 5rem;
+}
+
+.clicked{
+    color: brown
+}
+
+.showing{
+    display: block;
+}
+.js_weather{
+    color: white;
+    position: absolute;
+    top: 2%;
+    left: 85%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 0.8rem;
+}
+
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 0.5s linear;
+    opacity: 0.9;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    text-align: center;
+}
